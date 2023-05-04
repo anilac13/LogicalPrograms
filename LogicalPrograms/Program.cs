@@ -8,7 +8,7 @@ namespace LogicalPrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nChoose option to perform \n1.Print Fibonacci series \n2.Perfect number \n3.Prime number \n4.Reverse a number \n5.Exit");
+                Console.WriteLine("\nChoose option to perform \n1.Print Fibonacci series \n2.Perfect number \n3.Prime number \n4.Reverse a number \n5.Coupon Numbers \n6..Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -25,6 +25,9 @@ namespace LogicalPrograms
                         ReverseNumber.ReverseGivenNumber();
                         break;
                     case 5:
+                        CouponNumbers.DistinctCoupon();
+                        break;
+                    case 6:
                         flag = false;
                         break;
                 }
