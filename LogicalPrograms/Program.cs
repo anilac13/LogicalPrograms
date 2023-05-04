@@ -9,7 +9,7 @@ namespace LogicalPrograms
             while (flag)
             {
                 Console.WriteLine("\nChoose option to perform \n1.Print Fibonacci series \n2.Perfect number \n3.Prime number \n4.Reverse a number \n5.Coupon Numbers \n6.Stop Watch \n7.Vending Machine " +
-                    "\n8.Day of Week \n9.Temperature Conversion \n10.Monthly Payment \n11.Square Root \n12.Decimal to Binary \n13.Exit");
+                    "\n8.Day of Week \n9.Temperature Conversion \n10.Monthly Payment \n11.Square Root \n12.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -47,9 +47,6 @@ namespace LogicalPrograms
                         SquareRoot.FindSquareRoot();
                         break;
                     case 12:
-                        DecimalToBinary.ConvertToBinary();
-                        break;
-                    case 13:
                         flag = false;
                         break;
                 }
