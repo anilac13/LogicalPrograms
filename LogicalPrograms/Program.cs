@@ -8,7 +8,7 @@ namespace LogicalPrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nChoose option to perform \n1.Print Fibonacci series \n2.Perfect number \n3.Prime number \n4.Reverse a number \n5.Coupon Numbers \n6..Exit");
+                Console.WriteLine("\nChoose option to perform \n1.Print Fibonacci series \n2.Perfect number \n3.Prime number \n4.Reverse a number \n5.Coupon Numbers \n6.Stop Watch \n7.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -28,6 +28,9 @@ namespace LogicalPrograms
                         CouponNumbers.DistinctCoupon();
                         break;
                     case 6:
+                        StopWatch.CalculateTime();
+                        break;
+                    case 7:
                         flag = false;
                         break;
                 }
